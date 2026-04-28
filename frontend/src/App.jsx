@@ -8,6 +8,7 @@ import Sales from './pages/Sales';
 import Purchases from './pages/Purchases';
 import Suppliers from './pages/Suppliers';
 import Invoices from './pages/Invoices';
+//invoice used //
 import Reports from './pages/Reports';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
