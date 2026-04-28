@@ -15,6 +15,7 @@ import Signup from './pages/Signup';
 
 function App() {
   //authentication is done here //
+  // authentication code
   const [isAuthenticated, setIsAuthenticated] = useState(!!localStorage.getItem('token'));
   const [user, setUser] = useState(JSON.parse(localStorage.getItem('user') || 'null'));
 
@@ -28,6 +29,7 @@ function App() {
     return () => window.removeEventListener('storage', handleStorageChange);
   }, []);
 
+  // login 
   const login = (token, userData) => {
     localStorage.setItem('token', token);
     localStorage.setItem('user', JSON.stringify(userData));
