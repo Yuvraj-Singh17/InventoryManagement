@@ -32,6 +32,7 @@ export const productApi = {
 };
 
 export const dashboardApi = {
+  // api is use for dashbopard//
   getSummary: () => api.get('/dashboard/summary'),
 };
 
