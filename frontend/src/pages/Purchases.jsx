@@ -1,6 +1,8 @@
 import React from 'react';
 import { Package, Plus } from 'lucide-react';
 
+
+// for tracking the purchase
 const Purchases = () => {
   return (
     <div className="page-container">
