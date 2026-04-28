@@ -21,7 +21,7 @@ export const authApi = {
   login: (data) => api.post('/auth/login', data),
   signup: (data) => api.post('/auth/signup', data),
 };
-// api for product 
+// api for products
 export const productApi = {
   getAll: (page = 0, size = 10) => api.get(`/products?page=${page}&size=${size}`),
   search: (term, page = 0, size = 10) => api.get(`/products?search=${term}&page=${page}&size=${size}`),
@@ -32,7 +32,7 @@ export const productApi = {
 };
 
 export const dashboardApi = {
-  // api is use for dashbopard//
+  // api is use for dashbopard
   getSummary: () => api.get('/dashboard/summary'),
 };
 
