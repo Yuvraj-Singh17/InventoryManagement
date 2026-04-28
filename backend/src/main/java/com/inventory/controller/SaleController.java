@@ -36,3 +36,4 @@ public class SaleController {
         return ResponseEntity.ok(saleService.createSale(productId, quantity));
     }
 }
+//Sale controller Completed
