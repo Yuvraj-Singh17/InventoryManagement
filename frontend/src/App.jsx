@@ -11,6 +11,7 @@ import Invoices from './pages/Invoices';
 import Reports from './pages/Reports';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+//import setup is done //
 
 function App() {
   //authentication is done here //
