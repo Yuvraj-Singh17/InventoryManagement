@@ -2,7 +2,7 @@ package com.inventory.exception;
 
 import java.util.HashMap;
 import java.util.Map;
-
+//final exception 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
