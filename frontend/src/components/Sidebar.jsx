@@ -2,6 +2,8 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { LayoutDashboard, Box, ShoppingCart, Users, FileText, PieChart, LogOut, Package } from 'lucide-react';
 
+
+// for side-bar
 const Sidebar = ({ logout }) => {
   const menuItems = [
     { icon: <LayoutDashboard size={20} />, label: 'Dashboard', path: '/' },
