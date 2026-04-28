@@ -3,7 +3,7 @@ package com.inventory.model;
 import jakarta.persistence.*;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.time.LocalDateTime;
-
+// extra model code
 @Entity
 @Table(name = "sales")
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
