@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inventory Management</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Inventory Management</h1>
+      <p>Login, view inventory, and manage stock in a simple UI.</p>
+    </header>
+
+    <div id="message" class="message hidden"></div>
+
+    <section id="auth-section" class="grid">
+      <div class="card">
+        <h2>Login</h2>
+        <form id="login-form">
+          <input id="login-email" type="email" placeholder="Email" required />
+          <input id="login-password" type="password" placeholder="Password" required />
+          <button type="submit">Login</button>
+        </form>
+      </div>
+      <div class="card">
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+          <input id="signup-fullName" type="text" placeholder="Full Name" required />
+          <input id="signup-email" type="email" placeholder="Email" required />
+          <input id="signup-password" type="password" placeholder="Password" required />
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="app-section" class="hidden">
+      <div class="toolbar">
+        <div>
+          <strong>Signed in as:</strong> <span id="user-label"></span>
+        </div>
+        <button id="logout-btn" class="secondary">Logout</button>
+      </div>
+
+      <div class="card">
+        <h2>Dashboard</h2>
+        <div class="summary-grid">
+          <div><strong id="total-products">0</strong><span>Total Products</span></div>
+          <div><strong id="total-stock">0</strong><span>Total Stock</span></div>
+          <div><strong id="revenue">0</strong><span>Revenue</span></div>
+        </div>
+        <button id="load-dashboard">Refresh Summary</button>
+      </div>
+
+      <div class="card">
+        <h2>Products</h2>
+        <div class="product-actions">
+          <button id="load-products">Load Products</button>
+          <button id="load-low-stock">Load Low Stock</button>
+        </div>
+        <div id="products-list" class="table-wrapper"></div>
+      </div>
+
+      <div class="card">
+        <h2>Create Product</h2>
+        <form id="product-form" class="grid two-column">
+          <input id="product-name" type="text" placeholder="Name" required />
+          <input id="product-sku" type="text" placeholder="SKU" required />
+          <input id="product-category" type="text" placeholder="Category" />
+          <input id="product-supplier" type="text" placeholder="Supplier" />
+          <input id="product-cost" type="number" step="0.01" placeholder="Cost Price" required />
+          <input id="product-sale" type="number" step="0.01" placeholder="Sale Price" required />
+          <input id="product-quantity" type="number" placeholder="Quantity" required />
+          <input id="product-description" type="text" placeholder="Description" />
+          <button type="submit">Create Product</button>
+        </form>
+      </div>
+    </section>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
