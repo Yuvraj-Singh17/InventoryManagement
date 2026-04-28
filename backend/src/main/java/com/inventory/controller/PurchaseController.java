@@ -33,3 +33,4 @@ public class PurchaseController {
         return ResponseEntity.ok(purchaseService.createPurchase(productId, supplierId, quantity, cost));
     }
 }
+//Completed Code of PurchaseController.java
