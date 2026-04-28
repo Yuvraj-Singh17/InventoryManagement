@@ -79,7 +79,6 @@ const Login = ({ onLogin }) => {
                 />
               </div>
             </div>
-
             <div className="form-group">
               <label>Password</label>
               <div className="input-wrapper">
@@ -100,7 +99,7 @@ const Login = ({ onLogin }) => {
           </form>
 
           <div className="auth-footer">
-            <p>Don't have an account? <Link to="/signup">Sign Up</Link></p>
+            <p>Don't have an account? <Link to="/signup">SIGN-UP</Link></p>
           </div>
         </div>
       </motion.div>
