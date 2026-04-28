@@ -38,6 +38,7 @@ const Products = () => {
     }
   };
 
+  // for handling the new products
   const handleCreateProduct = async (e) => {
     e.preventDefault();
     try {
@@ -49,7 +50,7 @@ const Products = () => {
       alert("Failed to create product");
     }
   };
-
+// for deleting the products
   const handleDelete = async (id) => {
     if (window.confirm("Are you sure you want to delete this product?")) {
       try {
