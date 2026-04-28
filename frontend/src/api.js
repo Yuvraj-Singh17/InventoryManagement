@@ -40,7 +40,7 @@ export const saleApi = {
   getAll: (page = 0, size = 10) => api.get(`/sales?page=${page}&size=${size}`),
   create: (data) => api.post('/sales', data),
 };
-
+// suppliers api
 export const supplierApi = {
   getAll: (page = 0, size = 10) => api.get(`/suppliers?page=${page}&size=${size}`),
   create: (data) => api.post('/suppliers', data),
