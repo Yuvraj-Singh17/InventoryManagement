@@ -8,7 +8,7 @@ const api = axios.create({
     'Content-Type': 'application/json',
   },
 });
-// Final Code
+// Final Code format
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem('token');
   if (token) {
