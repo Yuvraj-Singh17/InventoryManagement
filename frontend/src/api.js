@@ -21,7 +21,7 @@ export const authApi = {
   login: (data) => api.post('/auth/login', data),
   signup: (data) => api.post('/auth/signup', data),
 };
-
+// api for product 
 export const productApi = {
   getAll: (page = 0, size = 10) => api.get(`/products?page=${page}&size=${size}`),
   search: (term, page = 0, size = 10) => api.get(`/products?search=${term}&page=${page}&size=${size}`),
